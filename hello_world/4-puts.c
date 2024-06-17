@@ -1,3 +1,8 @@
+/**
+*main - return nothing
+*Description: 'puts'
+*Return: Always 0 (Success)
+*/
 #include <stdio.h>
 int main(void)
 {
