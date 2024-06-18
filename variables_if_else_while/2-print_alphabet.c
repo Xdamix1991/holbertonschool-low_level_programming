@@ -7,8 +7,9 @@
 int main(void)
 {
 char ch = 'a';
-while (ch <= 26)
+while (ch <=i z)
 {putchar(ch);
-ch++; }
+ch++;
+putchar('\n')}
 return (0);
 }
