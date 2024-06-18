@@ -1,5 +1,5 @@
-/*
-*main - return nothing
+/**
+*main - return alphabet
 *Description : 'print alphabets"
 *Return: Always 0 (success)
 */
@@ -18,4 +18,3 @@ uch++;
 putchar ('\n');
 return (0);
 }
-
