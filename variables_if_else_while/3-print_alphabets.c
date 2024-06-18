@@ -1,6 +1,6 @@
 /*
 *main - return nothing
-*Description : 'printing alphabets"
+*Description : 'print alphabets"
 *Return: Always 0 (success)
 */
 #include <stdio.h>
