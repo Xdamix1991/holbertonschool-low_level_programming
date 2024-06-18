@@ -1,4 +1,4 @@
-/*
+/**
 *main - Prints alphabets from 'a' to 'z', except 'q' and 'e'
 *Description: 'This function uses a for loop to iterate through the alphabet'
 *Return: Always 0 (success)
