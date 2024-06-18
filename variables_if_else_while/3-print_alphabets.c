@@ -1,6 +1,6 @@
 /*
 *main - return nothing
-*Description : 'putchar alphabet lower and uppercases"
+*Description : 'printing alphabets"
 *Return: Always 0 (success)
 */
 #include <stdio.h>
