@@ -12,8 +12,8 @@ while (n < 10)
 {
 putchar(n + '0');
 if (n < 9)
-{putchar(32);
-putchar(44); }
+{putchar(44);
+putchar(32); }
 n++;
 }
 return (0);
