@@ -16,8 +16,5 @@ if (n < 9)
 putchar(44); }
 n++;
 }
-if (n == 10)
-{putchar(36);
-}
 return (0);
 }
