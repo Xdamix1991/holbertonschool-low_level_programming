@@ -16,5 +16,6 @@ if (n < 9)
 putchar(32); }
 n++;
 }
+putchar('\n');
 return (0);
 }
