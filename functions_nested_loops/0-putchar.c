@@ -1,5 +1,5 @@
 /**
-*main - return nothing
+*main - return nothin
 *Description: 'printf'
 *Return: Always 0 (Success)
 */
