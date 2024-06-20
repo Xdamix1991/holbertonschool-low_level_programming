@@ -1,6 +1,6 @@
 /**
 *main - return nothin
-*Description: 'printf'
+*Description: 'print alphabet'
 *Return: Always 0 (Success)
 */
 #include <unistd.h>
