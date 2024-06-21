@@ -1,5 +1,5 @@
 /**
-*print_alphabet_x10 - Print the alphabets
+*print_alphabet_x10 - Print the alphabet
 *Description: This function prints the alphabet in lowercase.
 *Return: void
 */
@@ -9,9 +9,9 @@ void print_alphabet_x10(void)
 {
 int j;
 j = 0;
+char c = 'a';
 while (j <= 10)
 {
-char c = 'a';
 while (c <= 'z')
 {_putchar(c);
 c++; }
