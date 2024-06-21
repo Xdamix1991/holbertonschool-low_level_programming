@@ -1,20 +1,18 @@
 /**
 *print_last_digit - print last number
 *@n: The number to print
-*@v: The variable to print
 *Description: print the last number
 *Return: Always 0 (Success).
 *On error, -1 is returned, and errno is set appropriately.
 */
 #include "main.h"
-int print_last_digit(int n, v)
+int print_last_digit(int n)
 {
-int v;
-v = n % 10;
-if (v < 0)
+n = n % 10;
+if (n < 0)
 {
-v = v * -1;
+n = n * -1;
 }
-_putchar(v + '0');
-return (v);
+_putchar(n + '0');
+return (n);
 }
