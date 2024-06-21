@@ -1,16 +1,15 @@
 /**
-*main - return nothin
-*Description: 'print alphabet'
-*Return: Always 0 (Success)
+*print_alphabet - Print the alphabet
+*Description: This function prints the alphabet in lowercase.
+*Return: void
 */
 #include <unistd.h>
 #include "main.h"
-int main(void)
+void print_alphabet(void)
 {
-char ch = 'a';
-while (ch <= 'z')
-{_putchar(ch);
-ch++; }
+char c  = 'a';
+while (c <= 'z')
+{_putchar(c);
+c++; }
 _putchar('\n');
-return (0);
 }
