@@ -1,5 +1,5 @@
 /**
-*print_alphabet_x10 - Print the alphabet
+*print_alphabet_x10 - Print the alphabets
 *Description: This function prints the alphabet in lowercase.
 *Return: void
 */
