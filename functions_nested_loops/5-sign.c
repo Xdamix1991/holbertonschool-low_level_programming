@@ -1,6 +1,6 @@
 /**
 *print_sign - print sign of a number
-*@c: The character to print
+*@n: The number to print
 *Description: print the sign
 *Return: Always 0 (Success).
 *On error, -1 is returned, and errno is set appropriately.
