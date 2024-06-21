@@ -3,7 +3,6 @@
 *Description: This function prints the alphabet in lowercase 10 times
 *Return: void
 */
-#include <unistd.h>
 #include "main.h"
 void print_alphabet_x10(void)
 {
