@@ -1,11 +1,11 @@
 /**
-*print_alphabet_x10 - Print the alphabet
+*print_alphabet - Print the alphabet
 *Description: This function prints the alphabet in lowercase.
 *Return: void
 */
 #include <unistd.h>
 #include "main.h"
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
 int j;
 char c = 'a';
