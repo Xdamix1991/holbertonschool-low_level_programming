@@ -10,7 +10,6 @@
 #include <unistd.h>
 void print_to_98(int n)
 {
-scanf("%d", &n);
 while (n < 99)
 {
 printf("%d", n);
