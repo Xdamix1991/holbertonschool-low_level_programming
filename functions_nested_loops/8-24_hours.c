@@ -12,14 +12,16 @@ H = 0;
 while (H < 24)
 {
 M = 0;
-do {
+while (M < 60)
+{
 _putchar((H / 10) + '0');
 _putchar((H % 10) + '0');
 _putchar(58);
 _putchar((M / 10) + '0');
 _putchar((M % 10) + '0');
-m++; }
-_puchar('\n');
+_putchar('\n');
+M++;
+}
 }
 H++;
 }
