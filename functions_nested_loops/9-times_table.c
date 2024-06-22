@@ -15,7 +15,7 @@ C = A *B;
 B = 0;
 while (B < 10)
 {
-_putchar (C + '0');
+_putchar ((C) + '0');
 _putchar(',');
 _putchar(' ');
 B++;
