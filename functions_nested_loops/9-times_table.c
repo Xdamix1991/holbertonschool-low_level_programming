@@ -16,16 +16,22 @@ while (B < 10)
 {
 C = A *B;
 if (B != 0)
+{
 _putchar(',');
 _putchar(' ');
 }
 if (C <= 9 && B != 0)
+{
 _putchar(' ');
-if (B > 9)
+}
+if (C > 9)
+{
 _putchar((C / 10) + '0');
+}
 _putchar((C % 10) + '0');
 B++;
 }
 _putchar('\n');
 A++;
+}
 }
