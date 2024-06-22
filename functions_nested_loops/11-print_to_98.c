@@ -16,7 +16,8 @@ while (n < 99)
 printf("%d", n);
 if (n != 98)
 {
-_printf(", ");
+printf(", ");
 }
-n++
+n++;
+}
 }
