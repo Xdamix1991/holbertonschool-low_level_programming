@@ -20,9 +20,7 @@ _putchar(',');
 _putchar(' ');
 }
 if (C <= 9 && B != 0)
-{
 _putchar(' ');
-}
 if (B > 9)
 _putchar((C / 10) + '0');
 _putchar((C % 10) + '0');
