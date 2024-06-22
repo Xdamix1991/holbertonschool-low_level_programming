@@ -14,8 +14,9 @@ scanf("%d", &n);
 while (n < 99)
 {
 printf("%d", n);
-_putchar(',');
-_putchar(' ');
-n++;
+if (n != 98)
+{
+_printf(", ");
 }
+n++
 }
