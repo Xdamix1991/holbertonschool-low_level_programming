@@ -9,14 +9,35 @@
 #include <stdio.h>
 #include <unistd.h>
 void print_to_98(int n)
+if (n <= 98)
 {
-while (n < 99)
+while (n <= 98)
+{
+if (n == 98)
 {
 printf("%d", n);
-if (n != 98)
+}
+else
 {
-printf(", ");
+printf("%d, ", n);
 }
 n++;
 }
+}
+else
+{
+while (n >= 98)
+{
+if (n == 98)
+{
+printf("%d", n);
+}
+else
+{
+printf("%d, ", n);
+}
+n--;
+}
+}
+return 0;
 }
