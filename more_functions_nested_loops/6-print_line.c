@@ -12,6 +12,7 @@ n = 0;
 if (n > 0)
 {
 _putchar('_' + '0');
+n++;
 _putchar('\n');
 }
 else
