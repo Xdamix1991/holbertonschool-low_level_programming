@@ -18,21 +18,21 @@ int buzz = 5 * n;
 int fizzbuzz = 15 * n;
 if (i != fizz && i != buzz && i != fizzbuzz)
 {
-printf("(%d)", i);
+printf("%d ", i);
 }
 else
 {
 if (i == fizz)
 {
-printf("fizz");
+printf("fizz ");
 }
 if (i == buzz)
 {
-printf("buzz");
+printf("buzz ");
 }
 if (i == fizzbuzz)
 {
-printf("fizzbuzz");
+printf("fizzbuzz ");
 }
 }
 n++; }
