@@ -15,11 +15,9 @@ int j;
 {
 for (i = 0; i < size; i++)
 {
-for (j = 1; i < size; j++)
+for (j = 0; i < size; j++)
 {
 _putchar(35);
-}
-_putchar('\n');
 }
 _putchar('\n');
 }
