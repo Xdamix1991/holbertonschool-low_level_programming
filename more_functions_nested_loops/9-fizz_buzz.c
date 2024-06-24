@@ -8,34 +8,26 @@
 #include <stdio.h>
 int main(void)
 {
-int n;
 int i;
-n = 1;
 for (i = 1; i <= 100; i++)
 {
-int fizz = 3 * n;
-int buzz = 5 * n;
-int fizzbuzz = 15 * n;
-if (i != fizz && i != buzz && i != fizzbuzz)
-{
-printf("%d ", i);
-}
-else
-{
-if (i == fizz)
-{
-printf("fizz ");
-}
-if (i == buzz)
-{
-printf("buzz ");
-}
-if (i == fizzbuzz)
+if (i % 3 == 0  && i % 5 == 0)
 {
 printf("fizzbuzz ");
 }
+if (i % 3 == 0)
+{
+printf("fizz ");
 }
-n++; }
+if (i % 5 == 0)
+{
+printf("buzz ");
+}
+else
+{
+printf("%d ", i);
+}
+}
 printf("\n");
 return (0);
 }
