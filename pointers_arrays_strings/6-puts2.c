@@ -9,13 +9,11 @@
 void puts2(char *str)
 {
 int x = 0;
-char print;
 while (str[x] != '\0')
 {
 _putchar(str[x]);
 _putchar('\n');
 x++;
 }
-print = str[x];
 }
 
