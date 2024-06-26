@@ -8,7 +8,7 @@
 #include "main.h"
 void print_rev(char *s)
 {
-int x;
+int x = 0;
 if (s[x] == '\0')
 {
 _putchar(s[x]);
