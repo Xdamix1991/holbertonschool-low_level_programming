@@ -9,12 +9,13 @@
 void print_rev(char *s)
 {
 int x = 0;
+int y;
 if (s[x] != '\0')
 {
 _putchar(s[x]);
 x++;
 }
-int y = x - 1;
+y = x - 1;
 if (y >= 0)
 {
 _putchar(s[y]);
