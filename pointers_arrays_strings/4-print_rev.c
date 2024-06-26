@@ -12,7 +12,6 @@ int x = 0;
 int y;
 while (s[x] != '\0')
 {
-_putchar(s[x]);
 x++;
 }
 y = x - 1;
