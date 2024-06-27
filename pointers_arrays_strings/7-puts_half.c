@@ -13,8 +13,10 @@ int y;
 while (str[x] != '\0')
 {
 x++;
+}
+y = x / 2;
 if (x % 2 == 1)
-y = (x / 2);
+{
 y++;
 }
 while (y < x)
