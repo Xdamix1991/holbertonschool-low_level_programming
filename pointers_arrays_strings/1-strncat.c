@@ -3,6 +3,7 @@
 *Description: up
 *@dest: pointer
 *@src: pointer
+*@n: number of array
 *Return: Always 0 (Success).
 *On error, -1 is returned, and errno is set appropriately.
 */
