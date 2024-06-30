@@ -16,7 +16,7 @@ while (i < n)
 {
 i++;
 }
-i = n - 1;
+j = n - 1;
 {
 while (j < n)
 {
