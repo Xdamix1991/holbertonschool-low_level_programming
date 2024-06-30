@@ -1,0 +1,18 @@
+/**
+**string_toupper - print string in reverse
+*Description: reverse string
+*@s: pointer
+*Return: Always 0 (Success).
+*On error, -1 is returned, and errno is set appropriately.
+*/
+#include "main.h"
+char *string_toupper(char *s)
+{
+int i = 0;
+while (s[i] != '\0' && s[i] >= 97 && s[i] <= 122)
+{
+s[i] = s[i] - 32;
+i++;
+}
+return (s);
+}
