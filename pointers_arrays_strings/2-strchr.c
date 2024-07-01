@@ -19,8 +19,8 @@ return (&s[i]);
 i++;
 }
 if (c == '\0')
-i{
+{
 return (&s[i]);
 }
-return (NULL);
+return (0);
 }
