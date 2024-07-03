@@ -1,5 +1,5 @@
 /**
-*factorial - writes the character c to stdout
+*factorial - factorial of a number
 *@n: number
 *
 *Return: On success 1.
