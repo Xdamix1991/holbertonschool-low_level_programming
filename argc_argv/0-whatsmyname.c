@@ -10,12 +10,9 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
-char *nom = argv[0];
-while (*nom != '\0')
+if (argc < 1)
 {
-_putchar(*nom);
-nom++;
+printf("%s\n", argv[0]);
 }
-_putchar('\n');
 return (0);
 }
