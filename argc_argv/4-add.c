@@ -1,26 +1,6 @@
 /**
-*addrecursive - function to check argc & argv
-*@s: pointer int
-*Return: On success 0.
-*On error, -1 is returned, and errno is set appropriately.
-**/
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
-int addrecursive(int *S)
-{
-if (*s == -1)
-{
-return (0);
-}
-return (0);
-}
-return (*s + addrecursive(s + 1);
-}
-
-/**
 *main - function to check argc & argv
-*@argc: number
+*@argc: number of arguments
 *@argv: pointer char
 *Return: On success 1.
 *On error, -1 is returned, and errno is set appropriately.
@@ -28,35 +8,30 @@ return (*s + addrecursive(s + 1);
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
+#include <ctype.h>
 int main(int argc, char *argv[])
 {
-int i = 0;
+int i;
 int result;
+char *tmp;
 if (argc < 2)
 {
 printf("0\n");
 }
-if (!isdigit(argv[i]))
+for (i = 1; i < argc; i++)
+{
+tmp = argv[i];
+while (*tmp)
+{
+if (!isdigit(*tmp))
 {
 printf("Error\n");
 return (1);
 }
-if (i < n)
-{i++;
-result = addrecursive(argv[i]);
-printf("%d\n", result);
+tmp++;
 }
+result += atoi(argv[i]);
+}
+printf("%d\n", result);
 return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
