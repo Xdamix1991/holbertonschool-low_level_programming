@@ -1,5 +1,5 @@
 /**
-*string_nconcat - function that returns a pointer to a two dimensional array
+*string_nconcat - function that concats two strings
 *@s1: string one
 *@s2: string two
 *@n: size of string
