@@ -10,7 +10,7 @@
 * including its name, age, and its owner's name.
 **/
 
-typedef struct dog
+struct dog
 {
 char *name;
 float age;
