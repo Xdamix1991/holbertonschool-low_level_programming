@@ -11,7 +11,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int i;
-char *tab;
+int *tab;
 
 /* Check if the number of elements or the size is zero */
 if (nmemb == 0 || size == 0)
