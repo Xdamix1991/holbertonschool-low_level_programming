@@ -3,7 +3,7 @@
 *@d: Pointer to  struct dog
 *@name: Pointer to  name of the dog
 *@age: Float to age
-*@owner: Pointer to owner owner
+*@owner: Pointer to owner
 **/
 #include "dog.h"
 #include <stdio.h>
