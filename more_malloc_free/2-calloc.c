@@ -26,7 +26,7 @@ if (tab == NULL)
 return (NULL);
 }
 /* Initialize the allocated memory to zero */
-for (i = 0; i < nmemb ; i++)
+for (i = 0; i < nmemb; i++)
 {
 tab[i] = 0;
 }
