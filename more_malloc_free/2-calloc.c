@@ -19,14 +19,14 @@ if (nmemb == 0 || size == 0)
 return (NULL);
 }
 /* Allocate memory for the array */
-tab = malloc((size) * nmemb);
+tab = malloc(size * nmemb);
 /* Check if the memory allocation failed */
 if (tab == NULL)
 {
 return (NULL);
 }
 /* Initialize the allocated memory to zero */
-for (i = 0; i < nmemb; i++)
+for (i = 0; i < nmemb * size; i++)
 {
 tab[i] = 0;
 }
