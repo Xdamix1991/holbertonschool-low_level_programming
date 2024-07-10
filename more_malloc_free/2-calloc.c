@@ -30,5 +30,5 @@ for (i = 0; i < nmemb * size; i++)
 {
 tab[i] = 0;
 }
-return ((void*)tab);
+return (tab);
 }
