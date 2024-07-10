@@ -11,7 +11,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int i;
-int *tab;
+char *tab;
 
 /* Check if the number of elements or the size is zero */
 if (nmemb == 0 || size == 0)
@@ -26,7 +26,7 @@ if (tab == NULL)
 return (NULL);
 }
 /* Initialize the allocated memory to zero */
-for (i = 0; i < (nmemb * size); i++)
+for (i = 0; i < nmemb ; i++)
 {
 tab[i] = 0;
 }
