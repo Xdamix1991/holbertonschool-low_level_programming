@@ -33,21 +33,16 @@ return (NULL);
 neko->name = malloc(sizeof(char) * (n + 1));
 if (neko->name == NULL)
 {
-    free(neko->name);
     return (NULL);
 }
 for (i = 0; i < n; i++)
 {
 neko->name[i] = name[i];
 }
-
 neko->age = age;
-
 neko->owner = malloc(sizeof(char) * (o + 1));
 if (neko->owner == NULL)
 {
-    free(neko->owner);
-    free(neko);
     return (NULL);
 }
 for (i = 0; i < o; i++)
