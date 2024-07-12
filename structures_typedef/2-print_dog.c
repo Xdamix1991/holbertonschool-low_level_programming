@@ -10,6 +10,7 @@ if (d == NULL)
 {
 rerutn;
 }
+
 /* checks et print the name */
 if (d->name == NULL)
 {
@@ -19,15 +20,10 @@ else
 {
 printf("Name: %s\n", d->name);
 }
-/* checks et print the age */
-if (d->age == 0)
-{
-printf("Age: (nil)\n");
-}
-else
-{
+
+/* checks et print the age, age cant be less than 0 */
 printf("Age: %f\n", d->age);
-}
+
 /* checks et print the owner */
 if (d->owner == NULL)
 {
