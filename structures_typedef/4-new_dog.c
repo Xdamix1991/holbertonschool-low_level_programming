@@ -10,7 +10,6 @@
 #include <stdlib.h>
 dog_t *new_dog(char *name, float age, char *owner)
 {
-/* allocating new space memory*/
 int n = 0;
 int o = 0;
 int i;
@@ -37,7 +36,7 @@ for (i = 0; i < n; i++)
 {
 neko->name[i] = name[i];
 }
-neko->name[n] = '\0';
+neko->name[i] = '\0';
 neko->age = age;
 neko->owner = malloc(sizeof(char) * (o + 1));
 if (neko->owner == NULL)
