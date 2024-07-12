@@ -6,6 +6,10 @@
 #include "dog.h"
 void print_dog(struct dog *d)
 {
+if (d == NULL)
+{
+rerutn (0);
+}
 /* checks et print the name */
 if (d->name == NULL)
 {
