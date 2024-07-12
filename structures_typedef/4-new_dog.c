@@ -26,8 +26,7 @@ while (owner[o] != '\0')
 o++;
 }
 neko = malloc(sizeof(dog_t));
-if (neko == NULL)
-{
+if (neko == NULL){
 return (NULL);
 }
 neko->name = malloc(sizeof(char) * n + 1);
@@ -39,6 +38,7 @@ return (NULL);
 for (i = 0; i < n; i++)
 {
 neko->name[i] = name[i];
+neko->name[i] = '\0';
 }
 neko->age = age;
 neko->owner = malloc(sizeof(char) * o + 1);
@@ -51,6 +51,7 @@ return (NULL);
 for (i = 0; i < o; i++)
 {
 neko->owner[i] = owner[i];
+neko->owner[o] = '\0';
 }
 return (neko);
 }
