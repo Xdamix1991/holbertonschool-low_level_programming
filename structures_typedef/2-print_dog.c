@@ -2,13 +2,14 @@
 *print_dog -  checks the  variables in  struct dog
 *@d: Pointer to  struct dog
 **/
+#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
 void print_dog(struct dog *d)
 {
 if (d == NULL)
 {
-rerutn;
+return;
 }
 
 /* checks et print the name */
