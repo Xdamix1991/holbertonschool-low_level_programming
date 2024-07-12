@@ -5,9 +5,6 @@
 *@owner: Pointer to owner
 *Return: Pointer to  dog_t structure on success, or NULL on failure
 **/
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "dog.h"
 dog_t *new_dog(char *name, float age, char *owner)
 {

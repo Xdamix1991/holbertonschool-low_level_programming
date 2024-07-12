@@ -9,6 +9,9 @@
 * Description: This structure encapsulates information about a dog,
 * including its name, age, and its owner's name.
 **/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 typedef struct dog
 {
