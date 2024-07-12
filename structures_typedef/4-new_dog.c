@@ -6,31 +6,52 @@
 *Return: Pointer to  dog_t structure on success, or NULL on failure
 **/
 #include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 dog_t *new_dog(char *name, float age, char *owner)
 {
 /* allocating new space memory*/
-dog_t *new_dog = (dog_t *) malloc(sizeof(dog_t));
-if (new_dog == NULL)
+{
+int n = 0;
+int o = 0;
+int i;
+dog_t *neko;
+while (name[n] != '\0')
+{
+n++;
+}
+while (owner[o] != '\0')
+{
+o++;
+}
+neko = malloc(sizeof(dog_t));
+if (neko == NULL)
 {
 return (NULL);
 }
-/* allocating memory for each elemet in the structure of dog*/
-new_dog->name = strdup(name);
-if (new_dog->name == NULL)
+neko->name = malloc(sizeof(char) * n + 1);
+if (neko->name == NULL)
 {
-free(new_dog->name);
+free(neko->name);
 return (NULL);
 }
-
-/*init age of dog*/
-new_dog->age = age;
-
-new_dog->owner = strdup(owner);
-if (new_dog->owner == NULL)
+for (i = 0; i < n; i++)
 {
-free(new_dog->owner);
-free(new_dog);
+neko->name[i] = name[i];
+}
+neko->age = age;
+neko->owner = malloc(sizeof(char) * o + 1);
+if (neko->owner == NULL)
+{
+free(neko->owner);
+free(neko);
 return (NULL);
 }
-return (new_dog);
+for (i = 0; i < o; i++)
+{
+neko->owner[i] = owner[i];
+}
+return (neko);
+}
 }
