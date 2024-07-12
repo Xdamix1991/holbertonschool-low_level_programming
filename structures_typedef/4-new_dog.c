@@ -30,7 +30,7 @@ if (neko == NULL)
 {
 return (NULL);
 }
-neko->name = malloc(sizeof(char) * n + 1);
+neko->name = malloc(sizeof(char) * (n + 1));
 if (neko->name == NULL)
 {
     free(neko->name);
@@ -43,7 +43,7 @@ neko->name[i] = name[i];
 
 neko->age = age;
 
-neko->owner = malloc(sizeof(char) * o + 1);
+neko->owner = malloc(sizeof(char) * (o + 1));
 if (neko->owner == NULL)
 {
     free(neko->owner);
