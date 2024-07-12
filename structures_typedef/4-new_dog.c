@@ -8,7 +8,6 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 dog_t *new_dog(char *name, float age, char *owner)
 {
 /* allocating new space memory*/
@@ -16,7 +15,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 int n = 0;
 int o = 0;
 int i;
-dog_t *neko;
 while (name[n] != '\0')
 {
 n++;
@@ -25,11 +23,12 @@ while (owner[o] != '\0')
 {
 o++;
 }
-neko = malloc(sizeof(dog_t));
-if (neko == NULL){
+dog_t *neko = malloc(sizeof(dog_t));
+if (neko == NULL)
+{
 return (NULL);
 }
-neko->name = malloc(sizeof(char) * n + 1);
+neko->name = malloc(sizeof(char) * (n + 1));
 if (neko->name == NULL)
 {
 free(neko->name);
@@ -38,7 +37,6 @@ return (NULL);
 for (i = 0; i < n; i++)
 {
 neko->name[i] = name[i];
-neko->name[i] = '\0';
 }
 neko->age = age;
 neko->owner = malloc(sizeof(char) * o + 1);
@@ -51,7 +49,6 @@ return (NULL);
 for (i = 0; i < o; i++)
 {
 neko->owner[i] = owner[i];
-neko->owner[o] = '\0';
 }
 return (neko);
 }
