@@ -12,17 +12,18 @@
 
 void array_iterator(int *array, size_t size, void(*action)(int))
 {
-int i;
+int *temp_array;
+size_t i;
 if (array == NULL || action == NULL || size == 0)
 {
 return;
 }
-int *temp_array = malloc(sizeof(int) * size);
+temp_array = malloc(sizeof(int) * size);
 if (temp_array == NULL)
 {
 return;
 }
-for (size_t i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
 temp_array[i] = array[i];
 }
