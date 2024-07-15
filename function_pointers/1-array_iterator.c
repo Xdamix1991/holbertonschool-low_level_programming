@@ -5,7 +5,7 @@
 *@action: pointer to This function that iterates over a array.
 *allocation memory to each element of the array.
 **/
-#include "main.h"
+#include "function_pointers.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
