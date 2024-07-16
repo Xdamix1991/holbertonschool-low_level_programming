@@ -11,21 +11,12 @@
 void array_iterator(int *array, size_t size, void(*action)(int))
 {
 size_t i;
-int temp;
-if (array != NULL || action != NULL)
-{
-temp = malloc(sizeof(int) * size);
-if (temp == NULL)
+if (array == NULL || action == NULL)
 {
 return;
 }
 for (i = 0; i < size; i++)
 {
-temp[i] = array[i];
-}
-for (i = 0; i < size; i++)
-{
 action(array[i]);
 }
-free(temp);
 }
