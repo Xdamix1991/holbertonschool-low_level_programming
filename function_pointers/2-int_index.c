@@ -12,29 +12,18 @@
 #include <stddef.h>
 int int_index(int *array, int size, int (*cmp)(int))
 {
-int *tmp;
 int i;
-if (size <= 0)
+if (array == NULL || cmp == NULL || size <= 0)
 {
 return (-1);
 }
-
-tmp = malloc(sizeof(int) * size);
-if (tmp == NULL)
-{
-return (0);
-}
-
 for (i = 0; i < size; i++)
 {
-tmp[i] = array[i];
 cmp(array[i]);
 if (cmp(array[i]) != 0)
 {
-free(tmp);
 return (i);
 }
 }
-free(tmp);
 return (-1);
 }
