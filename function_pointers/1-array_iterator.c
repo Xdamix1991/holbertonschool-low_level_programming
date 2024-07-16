@@ -10,24 +10,22 @@
 #include <stdlib.h>
 void array_iterator(int *array, size_t size, void(*action)(int))
 {
-int *temp_array;
 size_t i;
-if (array == NULL || action == NULL || size == 0)
+int temp;
+if (array != NULL || action != NULL)
 {
-return;
-}
-temp_array = malloc(sizeof(int) * size);
-if (temp_array == NULL)
+temp = malloc(sizeof(int) * size);
+if (temp == NULL)
 {
 return;
 }
 for (i = 0; i < size; i++)
 {
-temp_array[i] = array[i];
+temp[i] = array[i];
 }
 for (i = 0; i < size; i++)
 {
 action(array[i]);
 }
-free(temp_array);
+free(temp);
 }
