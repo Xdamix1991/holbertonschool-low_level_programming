@@ -19,7 +19,7 @@ for (i = 0; i < n; i++)
 str = va_arg(nombres, char*);
 if (str == NULL)
 {
-printf("(nil)";
+printf("(nil)");
 }
 else
 {
