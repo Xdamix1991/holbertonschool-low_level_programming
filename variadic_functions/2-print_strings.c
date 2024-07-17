@@ -26,7 +26,7 @@ else
 printf("%s", str);
 }
 
-if (separator != NULL && i > 0 && i < n - 1)
+if (separator != NULL && i != 0 && i < n - 1)
 {
 printf("%s", separator);
 }
