@@ -29,7 +29,7 @@ void print_char(va_list args)
 {
     char c;
     c = va_arg(args, int);
-    printf("%c ,\n", c);
+    printf("%c", c);
 }
 
 /** 
@@ -42,7 +42,7 @@ void print_integer(va_list args)
 {
     int i;
     i = va_arg(args, int);
-    printf("%d ,\n", i);
+    printf("%d", i);
 }
 
 /** 
@@ -55,7 +55,7 @@ void print_float(va_list args)
 {
     float f;
     f = va_arg(args, double);
-    printf("%f ,\n", f);
+    printf("%f", f);
 }
 
 /**
@@ -71,7 +71,7 @@ char *s;
     s = va_arg(args, char*);
 if (s !=NULL)
 {
-    printf("%s ,\n", s);
+    printf("%s", s);
 }
 else
 {
@@ -116,26 +116,21 @@ const char *ptr;
 va_list args;
 va_start(args, format);
 ptr = format;
+int first = 1;
 while (ptr != NULL && *ptr != '\0')
 {
 	void (*print_func)(va_list) = get_format_function(*ptr);
 	if (print_func != NULL)
 	{
+		if (!first)
+		{
+		printf(", ");
+		}
 		print_func(args);
+	first = 0;
 	}
+	first = 0;
 	ptr++;
 }
 va_end(args);
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
- void print_all(const char * const format, ...);
-int main(void)
-{
-    print_all("ceis", 'B', 3, "stSchool");
-    return (0);
 }
