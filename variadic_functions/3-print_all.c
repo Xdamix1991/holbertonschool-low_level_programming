@@ -8,7 +8,7 @@
  * @p: Function pointer to the function that prints the data of the type.
  */
 typedef struct {
-    char type; // 'c' for char, 'i' for int, 'f' for float, 's' for string
+    char type;
     void (*p)(va_list args);
 } format;
 
@@ -113,23 +113,23 @@ return (NULL);
 void print_all(const char * const format, ...)
 {
 const char *ptr;
+int cas;
 va_list args;
 va_start(args, format);
 ptr = format;
-int first = 1;
+cas = 1;
 while (ptr != NULL && *ptr != '\0')
 {
 	void (*print_func)(va_list) = get_format_function(*ptr);
 	if (print_func != NULL)
 	{
-		if (!first)
+		if (!cas)
 		{
 		printf(", ");
 		}
 		print_func(args);
-	first = 0;
+	cas = 0;
 	}
-	first = 0;
 	ptr++;
 }
 va_end(args);
