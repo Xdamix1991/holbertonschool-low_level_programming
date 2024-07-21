@@ -82,13 +82,11 @@ void (*get_format_function(char type))(va_list)
 		{'s', print_string},
 		{'\0', NULL}};
 	int i = 0;
-	while (types[i].type != '\0')
+	while (types[i].type != '\0' && types[i].type != type)
 	{
-		if (types[i].type == type)
-			return types[i].p;
 		i++;
-	}
-	return NULL;
+	}	
+	return types[i].p;
 }
 
 /**
