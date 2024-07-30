@@ -32,7 +32,7 @@ size_t my_strlen(const char *str)
  */
 char *my_strcpy(char *dest, const char *src)
 {
-	size_t i:
+	size_t i;
 
 	i = 0;
 
@@ -65,9 +65,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	str_len = my_strlen(str);
 
-	new_node->len = str_len;
-
-	new_node->str = malloc(sizeof(str));
+	new_node->str = malloc(str_len + 1);
 
 	if (new_node->str == NULL)
 	{
@@ -75,6 +73,8 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	my_strcpy(new_node->str, str);
+
+	new_node->len = str_len;
 
 	new_node->next = *head;
 	*head = new_node;
