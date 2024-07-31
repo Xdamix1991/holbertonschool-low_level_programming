@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- *dlistint_len: function that prints number of elements in a linked list
+ *dlistint_len - function that prints number of elements in a linked list
  *@h: a pointer to the structure
  *Return: the number of nodes
  */
