@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "lists.h"
+
 /**
  *print_list -² prints numbers of elements in the tructure
  *@h: a pointer to the structure
