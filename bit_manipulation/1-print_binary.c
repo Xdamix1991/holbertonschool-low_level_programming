@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 
 	if (n == 0)
 	{
-		putchar('0');
+		_putchar('0');
 		return;
 	}
 
@@ -29,7 +29,7 @@ void print_binary(unsigned long int n)
 	}
 	for (int j = i - 1; j >= 0; j--)
 	{
-		putchar(s[j]);
+		_putchar(s[j]);
 	}
 }
 
