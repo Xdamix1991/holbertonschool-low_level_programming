@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int file_len;
 	int whrite_file;
 
-	if (filename == NULL && letters == NULL) /** checks if file is NULL */
+	if (filename == NULL && letters == 0) /** checks if file is NULL */
 		return (0);
 	str = malloc(sizeof(char) * letters); /** allocate and stock memory for str */
 	if (str == NULL)
@@ -28,17 +28,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 	{
 		free(str);
-		clode(fd);
+		close(fd);
 		return (0);
 	}
 	file_len = read(fd, str, letters); /** Read the file */
 	if (file_len == -1)
 	{
 		free(str);
-		clode(fd);
+		close(fd);
 		return (0);
 	}
-	whrite_file = whrite(STDOUT_FILENO, str, letters); /** Write to strd output */
+	whrite_file = write(STDOUT_FILENO, str, letters); /** Write to strd output */
 	if (whrite_file == -1)
 	{
 		free(str);
