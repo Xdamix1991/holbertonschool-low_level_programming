@@ -13,8 +13,8 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	int file_len;
-	int write_file;
+	ssize_t file_len;
+	ssize_t write_file;
 
 	file_len = 0;
 
@@ -39,5 +39,5 @@ int create_file(const char *filename, char *text_content)
 		}
 	}
 	close(fd);
-	return (0);
+	return (1);
 }
