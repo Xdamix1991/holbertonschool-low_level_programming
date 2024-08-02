@@ -16,8 +16,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	char *str;
-	int file_len;
-	int whrite_file;
+	ssize_t file_len;
+	ssize_t whrite_file;
 
 	if (filename == NULL && letters == 0) /** checks if file is NULL */
 		return (0);
