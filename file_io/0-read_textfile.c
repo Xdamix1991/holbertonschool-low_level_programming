@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t file_len;
 	ssize_t whrite_file;
 
-	if (filename == NULL && letters == 0) /** checks if file is NULL */
+	if (filename == NULL || letters == 0) /** checks if file is NULL */
 		return (0);
 	str = malloc(sizeof(char) * letters); /** allocate and stock memory for str */
 	if (str == NULL)
