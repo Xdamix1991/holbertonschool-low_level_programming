@@ -9,6 +9,7 @@
  **/
 
 void print_binary(unsigned long int n)
+{
 	unsigned long int mask;
 	int leading_zero;
 
