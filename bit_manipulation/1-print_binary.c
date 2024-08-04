@@ -9,27 +9,27 @@
  **/
 
 void print_binary(unsigned long int n)
+	unsigned long int mask;
+	int leading_zero;
+
+	mask = 1UL << (sizeof(n) * 8 - 1);
+	leading_zero = 1;
+	while (mask > 0)
+
+		if ((n & mask) == 0 && leading_zero)
+		{
+			mask >>= 1;
+		}
+		else
+		{
+			putchar((n & mask) ? '1' : '0');
+			leading_zero = 0;
+			mask >>= 1;
+		}
+
+if (leading_zero)
 {
-	int i; /** index */
-	char s[32];
-
-	i = 0;
-
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
-
-	while (n > 0)
-	{
-		s[i] = (n % 2) ? '1' : '0';
-		i++;
-		n /= 2;
-	}
-	for (int j = i - 1; j >= 0; j--)
-	{
-		_putchar(s[j]);
-	}
+	putchar('0'); 
+}
 }
 
